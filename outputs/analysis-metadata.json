@@ -1,0 +1,45 @@
+{
+  "project": "grocery-changes",
+  "question": "What historical price information was available when beginning a simple grocery-budget project on June 14, 2023?",
+  "observation_start": "2018-01-01",
+  "observation_end": "2023-05-01",
+  "source_vintage": "2023-06-13",
+  "historical_cutoff": "2023-06-14",
+  "source_urls": {
+    "bread": "https://alfred.stlouisfed.org/series?seid=APU0000702111",
+    "eggs": "https://alfred.stlouisfed.org/series?seid=APU0000708111",
+    "milk": "https://alfred.stlouisfed.org/series?seid=APU0000709112"
+  },
+  "input_revision": {
+    "bread": "62abf163ab9ffdacacd05e56c3071dd9c8d003e8",
+    "eggs": "62abf163ab9ffdacacd05e56c3071dd9c8d003e8",
+    "milk": "62abf163ab9ffdacacd05e56c3071dd9c8d003e8"
+  },
+  "input_hashes": {
+    "bread.xlsx": "ee1082d58b61ced05109f725468c9356259e3e7bc1a2a89086d525c04335c716",
+    "eggs.xlsx": "857101e4b57ab93abe236f2ab12a7b0e10e3ebfb503aa56fe784b0a092968d32",
+    "milk.xlsx": "6a32546e75ce278ddf8a0cc90fb139279ec9d75579afe260a9eb30e8042ecf61"
+  },
+  "analysis_revision": "sha256:d34d80e8c2cf199683a75e8dc1c7cdc4387e2d64d2deed41ad41b83683ec9e7c",
+  "execution_date": "2026-11-13T16:03:07-08:00",
+  "publication_date": null,
+  "workbook_created_utc": {
+    "bread": "2026-11-13T22:32:56+00:00",
+    "eggs": "2026-11-13T22:35:18+00:00",
+    "milk": "2026-11-13T22:36:23+00:00"
+  },
+  "method": "Read both sheets without modifying the workbooks; validate metadata and complete monthly coverage, then export national average price levels separately by item and unit.",
+  "limitations": [
+    "U.S. city average prices are not local store prices; products and units differ.",
+    "Average price levels are not formal CPI inflation measures; BLS recommends CPI indexes for measuring price change.",
+    "The vintage is dated 2023-06-13; no intraday availability or actual project activity on 2023-06-14 is established.",
+    "Workbooks were created in 2026; this is a newly executed retrospective analysis, not a contemporaneous record.",
+    "No nutritional equivalence or causal interpretation is implied."
+  ],
+  "outputs": [
+    "outputs/price-history.svg",
+    "outputs/monthly-prices.csv",
+    "outputs/data-quality.csv",
+    "outputs/analysis-metadata.json"
+  ]
+}
