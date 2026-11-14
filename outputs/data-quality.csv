@@ -1,0 +1,4 @@
+item,series_id,unit,observation_start,observation_end,rows,observed_months,duplicate_dates,missing_months,malformed_dates,missing_values,invalid_values,out_of_range_dates
+bread,APU0000702111,U.S. dollars per pound,2018-01-01,2023-05-01,65,65,0,0,0,0,0,0
+eggs,APU0000708111,U.S. dollars per dozen,2018-01-01,2023-05-01,65,65,0,0,0,0,0,0
+milk,APU0000709112,U.S. dollars per gallon,2018-01-01,2023-05-01,65,65,0,0,0,0,0,0
